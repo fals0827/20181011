@@ -11,86 +11,81 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff085;" vgap="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.keyboard_controller">
    <children>
-      <GridPane hgap="5.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onZoomStarted="#Spin" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff085;" vgap="5.0">
-         <children>
-            <Button fx:id="bt9" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#evB9" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
-               <font>
-                  <Font size="41.0" />
-               </font>
-            </Button>
-            <Button fx:id="bt8" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#evB8" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
-               <font>
-                  <Font size="41.0" />
-               </font>
-            </Button>
-            <Button fx:id="bt7" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#evB7" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
-               <font>
-                  <Font size="41.0" />
-               </font>
-            </Button>
-            <Button fx:id="bt4" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#evB4" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
-               <font>
-                  <Font size="41.0" />
-               </font>
-            </Button>
-            <Button fx:id="bt5" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#evB5" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
-               <font>
-                  <Font size="41.0" />
-               </font>
-            </Button>
-            <Button fx:id="bt6" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#evB6" textAlignment="CENTER" GridPane.rowIndex="2">
-               <font>
-                  <Font size="41.0" />
-               </font>
-            </Button>
-            <Button fx:id="spin" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Spin" text="re" textAlignment="CENTER" textFill="#334e80" GridPane.rowIndex="3">
-               <font>
-                  <Font size="36.0" />
-               </font>
-            </Button>
-            <Button fx:id="bt3" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#evB3" textAlignment="CENTER" GridPane.rowIndex="1">
-               <font>
-                  <Font size="41.0" />
-               </font>
-            </Button>
-            <Button fx:id="bt2" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#evB2" textAlignment="CENTER" GridPane.columnIndex="2">
-               <font>
-                  <Font size="41.0" />
-               </font>
-            </Button>
-            <Button fx:id="bt1" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#evB1" textAlignment="CENTER" GridPane.columnIndex="1">
-               <font>
-                  <Font size="41.0" />
-               </font>
-            </Button>
-            <Button fx:id="bt0" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#evB0" textAlignment="CENTER">
-               <font>
-                  <Font size="41.0" />
-               </font>
-            </Button>
-            <Button fx:id="boardEnter" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#enterPass" text="enter" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
-               <font>
-                  <Font size="41.0" />
-               </font>
-            </Button>
-         </children>
-         <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-         </columnConstraints>
-         <padding>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </padding>
-         <rowConstraints>
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-         </rowConstraints>
-      </GridPane>
-      <PasswordField fx:id="tmpPassword" prefHeight="46.0" prefWidth="600.0" />
+      <Button fx:id="bt9" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt8" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt7" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt4" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt5" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt6" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn" textAlignment="CENTER" GridPane.rowIndex="2">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Button>
+      <Button fx:id="spin" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#initialize" text="Refresh" textAlignment="CENTER" textFill="#334e80" GridPane.rowIndex="3">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt3" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn" textAlignment="CENTER" GridPane.rowIndex="1">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt2" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn" textAlignment="CENTER" GridPane.columnIndex="2">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt1" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn" textAlignment="CENTER" GridPane.columnIndex="1">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt0" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn" textAlignment="CENTER">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnBack" text="Back" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
    </children>
-</Pane>
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+</GridPane>
