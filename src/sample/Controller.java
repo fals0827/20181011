@@ -10,6 +10,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import javax.swing.text.html.Option;
+
 public class Controller {
     public TextField account = new TextField();
     public PasswordField password = new PasswordField();
@@ -39,7 +41,14 @@ public class Controller {
     public void login (ActionEvent event){
         if (account.getText().equals(acc) && password.getText().equals(pass)){
             try {
+                if (account.getText().equals(acc) && password.getText().equals(pass)){
+                    FXMLLoader ld = new FXMLLoader(getClass().getResource("Home.fxml"));
+                    Parent homeWindow = ld.load();
+                    Stage homeStage = new Stage();
+                    homeStage.setScene(new Scene(homeWindow, 600,400));
+                    homeStage.show();
 
+                }
             }catch (Exception e){
                 e.printStackTrace();
             }
