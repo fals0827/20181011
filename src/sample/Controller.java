@@ -11,8 +11,8 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import javax.swing.text.html.Option;
-
 public class Controller {
+    static Stage homeStage = new Stage();
     public TextField account = new TextField();
     public PasswordField password = new PasswordField();
     public Button btK = new Button();
@@ -44,10 +44,10 @@ public class Controller {
                 if (account.getText().equals(acc) && password.getText().equals(pass)){
                     FXMLLoader ld = new FXMLLoader(getClass().getResource("Home.fxml"));
                     Parent homeWindow = ld.load();
-                    Stage homeStage = new Stage();
                     homeStage.setScene(new Scene(homeWindow, 600,400));
                     homeStage.show();
-
+                    Stage tmp = (Stage)enter.getScene().getWindow();
+                    tmp.close();
                 }
             }catch (Exception e){
                 e.printStackTrace();

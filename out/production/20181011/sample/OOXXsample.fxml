@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane hgap="5.0" prefHeight="420.0" prefWidth="600.0" style="-fx-background-color: #9DC1D3;" vgap="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OOXXController">
+   <children>
+      <Button fx:id="bt00" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Ev00" textFill="#4660b5">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt01" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Ev01" textFill="#4660b5" GridPane.columnIndex="1">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="bt11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Ev11" textFill="#4660b5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="bt10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Ev10" textFill="#4660b5" GridPane.rowIndex="1">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="bt02" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Ev02" textFill="#4660b5" GridPane.columnIndex="2">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="bt12" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Ev12" textFill="#4660b5" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="bt22" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Ev22" textFill="#4660b5" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="bt21" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Ev21" textFill="#4660b5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="bt20" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Ev20" textFill="#4660b5" GridPane.rowIndex="2">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="btRE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#EvReset" style="-fx-background-color: #F8DFCF;" text="Restart" textFill="#4660b5" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <Label alignment="CENTER" ellipsisString="" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #F8DFCF;" text="圈圈叉叉" textFill="#4660b5" textOverrun="CLIP" GridPane.columnIndex="3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btExit" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: #F8DFCF;" text="Exit" textFill="#4660b5" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </padding>
+   <rowConstraints>
+      <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="140.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="140.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="140.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+</GridPane>
