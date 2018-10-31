@@ -55,14 +55,4 @@ public class Secret_controller {
             }
         }
     }
-
-//    public void xorRun (){
-//        int length = textIn.getLength();
-//        String str = textIn.getText();
-//        String strKey = key.getText();
-//        textOut.setText("");
-//        for (int i = 0 ; i <length ; i ++){
-//            (int)strKey.charAt(i)
-//        }
-//    }
 }
