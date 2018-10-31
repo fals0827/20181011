@@ -11,6 +11,7 @@ import javafx.stage.Stage;
 
 public class Home_Controller {
     static Stage stageOOXX = new Stage();
+    static Stage stageSecret = new Stage();
     public MenuBar mnb = new MenuBar();
     public MenuItem item_Secret = new MenuItem();
     public MenuItem item_OOXX = new MenuItem();
@@ -24,7 +25,20 @@ public class Home_Controller {
             Controller.homeStage.close();
 
         }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 
+    public void openSecret (ActionEvent event){
+        try {
+            FXMLLoader loaderSecret = new FXMLLoader(getClass().getResource("Secret.fxml"));
+            Parent parentSecret = loaderSecret.load();
+            stageSecret.setScene(new Scene(parentSecret,633,482));
+            stageSecret.show();
+            Controller.homeStage.close();
+
+        }catch (Exception e ){
+            e.printStackTrace();
         }
     }
 }
