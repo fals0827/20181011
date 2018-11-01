@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="ok">
-      <change afterPath="$PROJECT_DIR$/src/sample/Prograss_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/20181011/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/20181011/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/20181011/sample/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/20181011/sample/Home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/20181011/sample/Home_Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/20181011/sample/Home_Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/20181011/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/20181011/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/20181011/sample/OOXXController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/20181011/sample/OOXXController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/20181011/sample/Prograss.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/20181011/sample/Prograss.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/20181011/sample/Secret.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/20181011/sample/Secret.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/20181011/sample/Secret_controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/20181011/sample/Secret_controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/20181011/sample/keyboard_controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/20181011/sample/keyboard_controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Home_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Home_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Prograss.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Prograss.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Secret.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Secret.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Secret_controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Secret_controller.java" afterDir="false" />
-    </list>
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="ok" />
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -75,6 +56,7 @@
     <session id="-488553345">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.41" value="1" />
@@ -289,7 +271,7 @@
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-4" />
     <option name="y" value="-4" />
     <option name="width" value="1620" />
@@ -339,7 +321,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541045183723" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541045242606" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="C:/Program Files (x86)/Oracle/JavaFX Scene Builder 2.0/JavaFX Scene Builder 2.0.exe" />
     <property name="project.structure.last.edited" value="Project" />
@@ -471,7 +453,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541002803429</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ok">
+      <created>1541045246901</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1541045246901</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -479,7 +468,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -491,7 +479,7 @@
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32972974" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.18486486" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.18486486" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39961576" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
