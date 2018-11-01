@@ -1,14 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="sample.Prograss"
-            prefHeight="400.0" prefWidth="600.0">
 
-</AnchorPane>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="213.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="14.0" layoutY="29.0" text="加密法">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="96.0" text="原始檔">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="131.0" text="加密檔">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="78.0" layoutY="29.0" prefWidth="150.0" />
+      <Label layoutX="258.0" layoutY="29.0" text="Key">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="307.0" layoutY="29.0" prefHeight="23.0" prefWidth="119.0" />
+      <Button layoutX="519.0" layoutY="24.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="67.0" text="Close">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="446.0" layoutY="23.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="67.0" text="Run">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TextField layoutX="74.0" layoutY="90.0" prefHeight="34.0" prefWidth="368.0" />
+      <TextField layoutX="74.0" layoutY="126.0" prefHeight="34.0" prefWidth="368.0" />
+      <Button layoutX="444.0" layoutY="90.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="142.0" text="Choose">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="444.0" layoutY="126.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="142.0" text="Choose">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ProgressBar layoutY="179.0" prefHeight="34.0" prefWidth="600.0" progress="0.0" />
+   </children>
+</Pane>

@@ -17,7 +17,7 @@ public class Controller {
     public PasswordField password = new PasswordField();
     public Button btK = new Button();
     public Button enter = new Button();
-
+    static Stage stage1 = new Stage();
 
     public String acc = "fals";
     public String pass = "3310";
@@ -29,7 +29,6 @@ public class Controller {
                 Parent keyboardWindow = loader.load();
                 keyboard_controller keyboard_controller = loader.getController();
                 keyboard_controller.password_field(password);
-                Stage stage1 = new Stage();
                 stage1.setScene(new Scene(keyboardWindow , 600 , 425));
                 stage1.show();
 

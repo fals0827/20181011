@@ -15,6 +15,7 @@ public class Home_Controller {
     public MenuBar mnb = new MenuBar();
     public MenuItem item_Secret = new MenuItem();
     public MenuItem item_OOXX = new MenuItem();
+    public MenuItem item_Exit = new MenuItem();
 
     public void openOOXX (ActionEvent event){
         try{
@@ -40,5 +41,9 @@ public class Home_Controller {
         }catch (Exception e ){
             e.printStackTrace();
         }
+    }
+
+    public void exit(ActionEvent event){
+        System.exit(0);
     }
 }

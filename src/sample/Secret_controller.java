@@ -2,7 +2,13 @@ package sample;
 
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
+
+import java.io.*;
 
 public class Secret_controller {
     public MenuItem close = new MenuItem();
@@ -17,10 +23,43 @@ public class Secret_controller {
     public Button btClean = new Button();
     public Button btcRun = new Button();
     public Button btClose = new Button();
+    static Stage fileStage = new Stage();
 
     public void close (ActionEvent event){
         Controller.homeStage.show();
         Home_Controller.stageSecret.close();
+    }
+
+    public void open (ActionEvent event){
+        FileChooser Chooser = new FileChooser();
+        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("TXT (*.txt)","*.txt");
+        Chooser.getExtensionFilters().add(extFilter);
+        File file = Chooser.showOpenDialog(fileStage);
+
+        try {
+            FileReader frd = new FileReader(file.getAbsoluteFile());
+            BufferedReader brd = new BufferedReader(frd);
+            String str = brd.readLine();
+            textIn.setText(str);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+    }
+
+    public void save (ActionEvent event){
+        FileChooser Chooser = new FileChooser();
+        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("TXT (*.txt)","*.txt");
+        Chooser.getExtensionFilters().add(extFilter);
+        File file = Chooser.showSaveDialog(fileStage);
+        try {
+            FileWriter fwt = new FileWriter(file);
+            BufferedWriter bwt = new BufferedWriter(fwt);
+            String str = textOut.getText();
+            bwt.write(str);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     public void initialize() {
@@ -37,6 +76,11 @@ public class Secret_controller {
         }else if (mode.getValue().equals("XOR")){
 
         }
+    }
+
+    public void clean (ActionEvent event){
+        textIn.setText("");
+        textOut.setText("");
     }
 
     public void caesarRun (){
