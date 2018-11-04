@@ -12,9 +12,11 @@ import javafx.stage.Stage;
 public class Home_Controller {
     static Stage stageOOXX = new Stage();
     static Stage stageSecret = new Stage();
+    static Stage stagePrograss = new Stage();
     public MenuBar mnb = new MenuBar();
     public MenuItem item_Secret = new MenuItem();
     public MenuItem item_OOXX = new MenuItem();
+    public MenuItem item_Prograss = new MenuItem();
     public MenuItem item_Exit = new MenuItem();
 
     public void openOOXX (ActionEvent event){
@@ -39,6 +41,18 @@ public class Home_Controller {
             Controller.homeStage.close();
 
         }catch (Exception e ){
+            e.printStackTrace();
+        }
+    }
+
+    public void openPrograss (ActionEvent event){
+        try {
+            FXMLLoader proLoader = new FXMLLoader(getClass().getResource("Prograss.fxml"));
+            Parent proParent = proLoader.load();
+            stagePrograss.setScene(new Scene(proParent , 600 , 213));
+            stagePrograss.show();
+            Controller.homeStage.close();
+        }catch (Exception e){
             e.printStackTrace();
         }
     }

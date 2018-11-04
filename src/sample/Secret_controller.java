@@ -57,6 +57,8 @@ public class Secret_controller {
             BufferedWriter bwt = new BufferedWriter(fwt);
             String str = textOut.getText();
             bwt.write(str);
+            bwt.flush();
+            bwt.close();
         }catch (Exception e){
             e.printStackTrace();
         }
