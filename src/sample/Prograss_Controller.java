@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 
 import java.io.*;
 import java.util.Timer;
+import java.util.TimerTask;
 
 public class Prograss_Controller {
     public MenuItem menuClose = new MenuItem();
@@ -28,10 +29,11 @@ public class Prograss_Controller {
     public ProgressBar pgb = new ProgressBar();
     public File fileIn ;
     public File fileOut ;
+    public Timer timer;
+    public double i = 0;
 
     public void initialize (){
         mode.setItems(FXCollections.observableArrayList("Caesar cipher","XOR"));
-
     }
 
     public void close (ActionEvent event){
@@ -63,6 +65,8 @@ public class Prograss_Controller {
         String tmp = "";
         key = Integer.parseInt(tKey.getText());
         pgb.setProgress(0);
+        i = 0;
+
         try {
             FileReader fileReader = new FileReader(fileIn);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
@@ -70,14 +74,26 @@ public class Prograss_Controller {
 
             for (int i = 0; i < str.length(); i++) {
                 tmp = tmp + (char) ((int) str.charAt(i) + key);
-                pgb.setProgress((double) i / str.length());
             }
-            pgb.setProgress(1);
+
+
+            timer = new Timer();
+            TimerTask task = new TimerTask() {
+                @Override
+                public void run() {
+                    i += 0.01 ;
+                    pgb.setProgress(i);
+                }
+            };
+
+            timer.schedule(task, 0, 30);
+
             FileWriter fileWriter = new FileWriter(fileOut);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             bufferedWriter.write(tmp);
             bufferedWriter.flush();
             bufferedWriter.close();
+
 
 
         } catch (Exception e) {
